@@ -141,11 +141,6 @@ main p{
     font-weight: 600;
 }
 
-.btn:hover{
-    border: rgb(229, 32, 32) 1px solid;    
-    color: #000;
-}
-
 .descripcion{
     margin-bottom: 30px;
     text-align: justify;

@@ -3,93 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pizzeria - La Octava Porción</title>
+
+    <!-- Bootstrap 5.3.6 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    
+    <!-- Google Fonts > Roboto + Open Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./Css/styles.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Tastify -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.6.1/toastify.min.css" integrity="sha512-UiKdzM5DL+I+2YFxK+7TDedVyVm7HMp/bN85NeWMJNYortoll+Nd6PU9ZDrZiaOsdarOyk9egQm6LOJZi36L2g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Sweet Alert 2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.23.0/sweetalert2.css" integrity="sha512-/j+6zx45kh/MDjnlYQL0wjxn+aPaSkaoTczyOGfw64OB2CHR7Uh5v1AML7VUybUnUTscY5ck/gbGygWYcpCA7w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.css">
+
 </head>
+
 <body>
-   <Header>
-         <nav class="navbar navbar-expand-lg bs-danger">
-                <div class="container-fluid">
-                    <div class="icono">
-                        <img class="mr-2" src="/img/icono.png" alt="Logo" width="40" height="34" class="d-inline-block align-text-top">
-                        <a class="navbar-brand text-white" href="#">La 8va porción</a>
-                    </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="/index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link text-white" href="/pizzas.html">Pizzas</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link text-white" href="/locales.html">locales</a>
-                        </li>
-                    </ul>
-                    </div>
-                </div>
-            </nav>
+
         
-        <div>
-            <img src="img/preparacion.jpg" alt="Pizza servida" class="fotoportada">
-        </div>
-   </Header> 
-   
-   <main class="fondo">
-        <div class="pizzas">
-            <div class="text-header">
-                <h2 class="titulo">Nuestros locales</h2>
-                <div class="box">
-                    <h2 class="titulo-local">Capital Federal</h2>
-                    
-                    <ul class="text-body">
-                        <li>La 8va porción–Palermo Viejo</li>
-                        <p>En una de las zonas más vibrantes de la ciudad, rodeada de arte, bares y cultura.</p>
+    <!-- Hero -->
+    <header>
 
-                        <li>La 8va porción–Caballito norte</li>
-                        <p>En el corazón geográfico de la capital, ideal para almuerzos de oficina o cenas en familia.</p>
-
-                        <li>La 8va porción–Belgrano R</li>
-                        <p>Un rincón elegante con ambiente tranquilo y cálido. Perfecto para cenas gourmet.</p>
-
-                        <li>La 8va porción–San telmo Historico</li>
-                        <p>A pocos pasos del casco antiguo, donde el sabor clásico se mezcla con la tradición porteña.</p>
-
-                        <li>La 8va porción–Villa Crespo</li>
-                        <p>En una esquina icónica del barrio, con estilo moderno y terraza al aire libre.</p>   
-                    </ul>
+        <nav class="navbar navbar-expand-lg bs-danger">
+            <div class="container-fluid">
+                
+                <div class="icono">
+                    <img class="mr-2" src="/img/icono.png" alt="Logo" width="40" height="34" class="d-inline-block align-text-top">
+                    <a class="navbar-brand text-white" href="#">La 8va porción</a>
                 </div>
 
-                <div class="box">
-                    <H2 class="titulo-local">Gran Buenos Aires</H2>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                    <ul class="text-body">
-                        <li>La 8va porción–San Isidro Cetro</li>
-                        <p>A metros de la catedral, con menú exclusivo y vista al río.</p>
+                <div class="collapse navbar-collapse" id="navbarNav">
 
-                        <li>La 8va porción–Quilmes plaza</li>
-                        <p>Dentro de una galería comercial muy concurrida, con opciones rápidas y delivery eficiente.</p>
+                    <ul class="navbar-nav">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="/index.html">Inicio</a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/locales.html">Locales</a>
+                        </li>
 
-                        <li>La 8va porción–Pilar norte</li>
-                        <p>Local amplio con juegos para chicos, ideal para salidas familiares.</p>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/contacto.html">Contactanos</a>
+                        </li>                    
 
-                        <li>La 8va porción–Avellaneda Estación</li>
-                        <p>Frente a la estación central, perfecta para una pizza antes de volver a casa.</p>
                     </ul>
+
+                </div>
+
+                <a  class="nav-link text-white ms-auto position-relative me-2" 
+                    href="#" 
+                    id="carritoIcono"                
+                    data-bs-toggle="offcanvas" 
+                    data-bs-target="#offcanvasCarrito"
+                    aria-controls="offcanvasCarrito">                    
+
+                        <i class="fas fa-shopping-cart fa-xl"></i>                    
+                        <span id="contador-carrito" class="badge bg-dark rounded-pill contador-carrito">0</span>                    
+                </a>
+
+            </div>
+        </nav>
+
+        <!-- Carousel -->
+        <div id="carouselExampleRide" class="carousel slide res" data-bs-ride="true">
+            <div class="carousel-inner slide-alto">
+                <div class="carousel-item active ">
+                    <img src="/img/pizza_capresse.jpeg" class="d-block w-100 " alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="text-white">Pizza Capresse</h1>
+                        <h2 class="text-white">La frescura de la albahaca, tomate y mozzarella.</h2>
+                        <button class="btn btn-sm mt-4" onclick="agregarPorID(3)">QUIERO LA MIA</button>
+                    </div>                
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/pizzahawaiana.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="text-white">Pizza Hawaiana</h1>
+                        <h2 class="text-white">La polémica combinación de jamón, ananá y queso.</h2>
+                        <button class="btn btn-sm mt-4" onclick="agregarPorID(5)">QUIERO LA MIA</button>
+                    </div>                
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/pizzacuatroquesos.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <h1 class="text-white">Pizza Cuatro quesos</h1>
+                        <h2 class="text-white">Fusión intensa de cuatro variedades</h2>
+                        <button class="btn btn-sm mt-4" onclick="agregarPorID(6)">QUIERO LA MIA</button>
+                    </div>                
                 </div>
             </div>
-        </div>
- </main>
 
-<footer>
-     <div class="col-12 text-center">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        
+        </div> 
+        <!-- /Carousel -->  
+
+    </header> 
+    <!-- Hero -->
+
+    <main class="container" >
+       
+        <main class="my-5">
+           
+            <!-- Titulo seccion -->
+            <div class="text-header">
+                <h2 class="titulo">Nuestras Sucursales</h2>
+                <div>
+                    <p>
+                        Ofrecemos pizzas artesanales con masa casera: muzzarella, napolitana, fugazzeta, especial, pepperoni y opciones vegetarianas. ¡Hechas con los mejores ingredientes y mucho sabor!
+                    </p>
+                    <hr>
+                </div>
+            </div>
+            <!-- /Hero -->            
+
+            <div class="row g-4">
+                    
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card h-100 shadow-sm border-danger">
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold text-danger">Sede La Plata</h5>
+                                <p class="card-text mb-1">Calle 8 N° 1234, B7999BPP</p>
+                                <p class="card-text text-muted small">Centro</p>
+                                <a href="tel:+542214567890" class="btn btn-sm btn-outline-dark mt-2">221-456-7890</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold">Sede City Bell</h5>
+                                <p class="card-text mb-1">Cno. Centenario e/ 472 y 473</p>
+                                <p class="card-text text-muted small">Barrio Norte</p>
+                                <a href="tel:+542215001234" class="btn btn-sm btn-outline-dark mt-2">221-500-1234</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold">Sede Gonnet</h5>
+                                <p class="card-text mb-1">Avenida 13 N° 987, Esquina 501</p>
+                                <p class="card-text text-muted small">Plaza Malvinas</p>
+                                <a href="tel:+542216785555" class="btn btn-sm btn-outline-dark mt-2">221-678-5555</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold">Sede Olivos</h5>
+                                <p class="card-text mb-1">Av. del Libertador 2400</p>
+                                <p class="card-text text-muted small">Buenos Aires</p>
+                                <a href="tel:+541130304040" class="btn btn-sm btn-outline-dark mt-2">011-3030-4040</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>            
+
+
+        </main>
+
+    </main>
+    
+    <footer>
+
+        <div class="col-12 text-center">
             <a href="https://www.facebook.com/" target="_blank">
                 <img src="/img/facebooklogo.png" alt="facebook logo"  class="redes">
             </a>
@@ -102,8 +208,18 @@
         <div class="col-12 text-center">
             <p>Tomás De Gaetano 2025</p>
         </div>
-</footer>
+
+    </footer>
 
 </body>
+
+    <!-- Tastify -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.6.1/toastify.min.js" integrity="sha512-79j1YQOJuI8mLseq9icSQKT6bLlLtWknKwj1OpJZMdPt2pFBry3vQTt+NZuJw7NSd1pHhZlu0s12Ngqfa371EA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>     
+
+    <!-- Sweet alert 2 Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.23.0/sweetalert2.js" integrity="sha512-SAy+5di7/mSvHkp80IwlsrQxfB5Zo2V8DeYseepV20ttbmwaD18xGLrdQfLNr4W7o7LO0HsNGrngqqag6ZV50Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Bootstrap 5.3.6 Js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </html>
